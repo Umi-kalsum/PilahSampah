@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Card */
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-card {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.balance {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.profile-details li {
+  background-color: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Form Styles */
+section {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-buttons button {
+  flex: 1;
+  margin: 0 5px;
+}
