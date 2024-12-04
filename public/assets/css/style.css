@@ -7,12 +7,16 @@
     --text-gray: #6C757D;
 }
 
+<<<<<<< HEAD
 /* Landingpage */
 /* Global styles */
+=======
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     line-height: 1.6;
 }
 
@@ -48,11 +52,68 @@ header .navbar li .btn {
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
+=======
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+    color: var(--text-gray);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-blue);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+header ul li .btn {
+    padding: 6px 14px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; 
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 }
 
 /* Hero Section */
 .hero {
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: space-between;
     padding: 50px;
@@ -60,10 +121,23 @@ header .navbar li .btn {
 }
 
 .hero-text {
+=======
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 40px 40px; /* Adjusted for fixed header */
+    background-color: var(--light-blue);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    flex: 1;
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
     max-width: 50%;
 }
 
 .hero-text h1 {
+<<<<<<< HEAD
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -79,11 +153,32 @@ header .navbar li .btn {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+=======
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-text .btn {
+    padding: 12px 25px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 }
 
 .hero-image img {
     max-width: 100%;
     height: auto;
+<<<<<<< HEAD
 }
 
 /* Cards Section */
@@ -109,6 +204,13 @@ footer {
 }
 
 
+=======
+    object-fit: cover;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 /* Jenis Sampah Section */
 .jenis-sampah {
     padding: 40px;
@@ -325,7 +427,12 @@ footer p {
     font-size: 0.9rem;
 }
 
+<<<<<<< HEAD
 /* untuk jenis sampah */
+=======
+/* untuk sampahcontroler */
+/* Gaya umum untuk body */
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -334,6 +441,7 @@ body {
 }
 
 /* Header */
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -359,24 +467,103 @@ header {
     width: 150px;
 }
 .category img, .item img {
+=======
+header {
+    background-color: #2196F3; /* Warna biru */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Kategori Sampah */
+.categories {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk setiap kategori */
+.category {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+
+.category img {
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
     border-radius: 8px;
 }
+<<<<<<< HEAD
 .category p, .item p {
     font-size: 16px;
     font-weight: bold;
 }
+=======
+
+/* Nama kategori */
+.category p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Daftar item dalam kategori */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Gaya untuk setiap item */
+.item {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Nama item */
+.item p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Tautan untuk detail item */
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 .item a {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 10px;
+<<<<<<< HEAD
     background-color: #4CAF50;
+=======
+    background-color: #2196F3; /* Warna biru */
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
     color: white;
     text-decoration: none;
     border-radius: 4px;
 }
+<<<<<<< HEAD
 .item a:hover {
     background-color: #45a049;
 }
@@ -389,6 +576,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+=======
+
+.item a:hover {
+    background-color: #1976D2; /* Warna biru sedikit lebih gelap saat hover */
+}
+
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 /* Footer */
 footer {
     background-color: #333;
@@ -411,6 +605,7 @@ footer {
     height: 150px;
     border-radius: 10px;
 }
+<<<<<<< HEAD
  /* style untuk jenis sampah */
  .cards {
     display: flex;
@@ -487,3 +682,5 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+=======
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)

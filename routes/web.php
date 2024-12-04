@@ -34,6 +34,7 @@ Route::get('about_me', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\JenisSampahController;
 
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
@@ -83,5 +84,10 @@ Route::get('dashboard', function () {
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('kelola-sampah', [SampahController::class, 'index'])->name('sampah.kelola');
+=======
+use App\Http\Controllers\SampahController;
+
+Route::get('/jenis-sampah', [SampahController::class, 'index']);
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 
 require __DIR__.'/auth.php';

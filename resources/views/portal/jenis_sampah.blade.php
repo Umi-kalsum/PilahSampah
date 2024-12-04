@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('layouts.app')
 
 @section('content')
@@ -18,6 +19,8 @@
 </section>
 @endsection
 =======
+=======
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,6 +91,7 @@
     <header>
         <h1>Jenis Sampah yang Bisa di HOMPIMPAPin</h1>
     </header>
+<<<<<<< HEAD
 =======
 @extends('layouts.app')
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
@@ -105,12 +109,41 @@
         </div>
     @endforeach
 <<<<<<< HEAD
+=======
+
+    <!-- Daftar Kategori -->
+    <section class="categories">
+        @foreach($jenis_sampah as $jenis => $data)
+            <div class="category">
+                <img src="{{ asset($data['image']) }}" alt="{{ $jenis }}">
+                <p>{{ $jenis }}</p>
+            </div>
+        @endforeach
+    </section>
+
+    <!-- Daftar Item Berdasarkan Kategori -->
+    @foreach($jenis_sampah as $jenis => $data)
+        <section class="items">
+            <h2>{{ $jenis }}</h2>
+            <div class="item-list">
+                @foreach($data['items'] as $item)
+                    <div class="item">
+                        <img src="{{ asset($item['image']) }}" alt="{{ $item['name'] }}">
+                        <p>{{ $item['name'] }}</p>
+                        <a href="{{ url($item['link']) }}">Detail</a>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    @endforeach
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 
     <footer>
         <p>&copy; 2024 Pilah Sampah. All rights reserved.</p>
     </footer>
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 =======
 </section>
@@ -157,3 +190,5 @@
 </body>
 </html>
 >>>>>>> ca3563d (re Jenis sampah)
+=======
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
