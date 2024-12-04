@@ -27,6 +27,7 @@ Route::get('about_me', function () {
     return view('portal.about_me'); 
 });
 
+<<<<<<< HEAD
 use App\Http\Controllers\JenisSampahController;
 
 Route::get('/', function () {
@@ -34,5 +35,10 @@ Route::get('/', function () {
 })->name('landingpage');
 
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
+=======
+use App\Http\Controllers\SampahController;
+
+Route::get('/jenis-sampah', [SampahController::class, 'index']);
+>>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 
 require __DIR__.'/auth.php';
