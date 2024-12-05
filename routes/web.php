@@ -27,8 +27,12 @@ Route::get('about_me', function () {
     return view('portal.about_me'); 
 });
 
-use App\Http\Controllers\SampahController;
+use App\Http\Controllers\JenisSampahController;
 
-Route::get('/jenis-sampah', [SampahController::class, 'index']);
+Route::get('/', function () {
+    return view('portal.landingpage'); // Path diperbarui
+})->name('landingpage');
+
+Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
 
 require __DIR__.'/auth.php';
