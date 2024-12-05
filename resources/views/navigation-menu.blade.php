@@ -74,6 +74,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
                         <!-- Settings Dropdown -->
@@ -105,6 +108,7 @@
                                             </span>
                                         @endif
                                     </x-slot>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
                                     <x-slot name="content">
@@ -144,22 +148,26 @@
 =======
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
-                                        <svg class="ms-2 -me-0.5 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                        </svg>
-                                    </button>
-                                </span>
-                            @endif
-                        </x-slot>
+                                    <x-slot name="content">
+                                        <!-- Content slot implementation -->
+                                    </x-slot>
+                                </x-dropdown>
+                            </div>
 
+<<<<<<< HEAD
                         <x-slot name="content">
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Account') }}
                             </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -183,6 +191,12 @@
                                 {{ __('Profile') }}
                             </x-dropdown-link>
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+                            @if (Auth::check())
+                            <x-dropdown-link href="{{ route('profile.show') }}">
+                                  {{ __('Profile') }}
+                             </x-dropdown-link>
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -196,6 +210,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             @if (Auth::check())
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
@@ -230,15 +245,25 @@
                             </form>
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
+=======
+                            @if (Auth::check())
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
-
-                                <x-dropdown-link href="{{ route('logout') }}"
-                                         @click.prevent="$root.submit();">
+                                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
                                     {{ __('Log Out') }}
                                 </x-dropdown-link>
                             </form>
+<<<<<<< HEAD
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+                        @else
+                            <x-dropdown-link href="{{ route('login') }}">
+                                {{ __('Login') }}
+                            </x-dropdown-link>
+                        @endif
+                            </form>
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                         </x-slot>
                     </x-dropdown>
                 </div>
@@ -283,6 +308,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
                     <!-- Account Management -->
@@ -302,6 +330,7 @@
                             </x-responsive-nav-link>
                     @endif
                 </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -324,6 +353,9 @@
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}" x-data>

@@ -14,6 +14,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -86,42 +87,51 @@
 
 <<<<<<< HEAD
 =======
+=======
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
-        <!-- Styles -->
-        @livewireStyles
-    </head>
-    <body class="font-sans antialiased">
-        <x-banner />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
+    <!-- Livewire -->
+    @livewireStyles
+</head>
+<body class="font-sans antialiased bg-gray-100">
+    <x-banner />
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+    <div class="min-h-screen">
+        @livewire('navigation-menu')
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
+        <!-- Page Heading -->
+        @if (isset($header))
+            <header class="bg-white shadow">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    {{ $header }}
+                </div>
+            </header>
+        @endif
 
-        @stack('modals')
+        <!-- Page Content -->
+        <main>
+            @yield('content')
+        </main>
+    </div>
 
+<<<<<<< HEAD
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
         @livewireScripts
     </body>
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 =======
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
     @stack('modals')
 
     @livewireScripts
 </body>
+<<<<<<< HEAD
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
 <html lang="en">
@@ -164,4 +174,6 @@
     </footer>
 </body>
 >>>>>>> 05483c3 (View portal artikel)
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 </html>

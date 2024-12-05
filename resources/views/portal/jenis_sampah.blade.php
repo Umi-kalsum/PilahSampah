@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('layouts.app')
 
 @section('content')
@@ -110,32 +111,23 @@
     @endforeach
 <<<<<<< HEAD
 =======
+=======
+@extends('layouts.app')
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
-    <!-- Daftar Kategori -->
-    <section class="categories">
-        @foreach($jenis_sampah as $jenis => $data)
-            <div class="category">
-                <img src="{{ asset($data['image']) }}" alt="{{ $jenis }}">
-                <p>{{ $jenis }}</p>
-            </div>
-        @endforeach
-    </section>
-
-    <!-- Daftar Item Berdasarkan Kategori -->
-    @foreach($jenis_sampah as $jenis => $data)
-        <section class="items">
-            <h2>{{ $jenis }}</h2>
-            <div class="item-list">
-                @foreach($data['items'] as $item)
-                    <div class="item">
-                        <img src="{{ asset($item['image']) }}" alt="{{ $item['name'] }}">
-                        <p>{{ $item['name'] }}</p>
-                        <a href="{{ url($item['link']) }}">Detail</a>
-                    </div>
-                @endforeach
-            </div>
-        </section>
+@section('content')
+<header>
+    <h1>Jenis Sampah yang Bisa di Pilah</h1>
+</header>
+<section class="categories">
+    @foreach ($jenisSampah as $jenis => $data)
+        <div class="category">
+            <img src="{{ asset($data['image']) }}" alt="{{ ucfirst($jenis) }}">
+            <p>{{ ucfirst($jenis) }}</p>
+            <a href="{{ route('jenis-sampah.detail', $jenis) }}" class="btn">Lihat Detail</a>
+        </div>
     @endforeach
+<<<<<<< HEAD
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 
     <footer>
@@ -192,3 +184,7 @@
 >>>>>>> ca3563d (re Jenis sampah)
 =======
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+</section>
+@endsection
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
