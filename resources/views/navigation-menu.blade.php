@@ -72,6 +72,9 @@
                 @endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                         <!-- Settings Dropdown -->
                             <div class="ms-3 relative">
                                 <x-dropdown align="right" width="48">
@@ -101,6 +104,7 @@
                                             </span>
                                         @endif
                                     </x-slot>
+<<<<<<< HEAD
 
                                     <x-slot name="content">
                                         <!-- Content slot implementation -->
@@ -121,22 +125,26 @@
                                 <span class="inline-flex rounded-md">
                                     <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150">
                                         {{ Auth::user()->name }}
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
-                                        <svg class="ms-2 -me-0.5 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                        </svg>
-                                    </button>
-                                </span>
-                            @endif
-                        </x-slot>
+                                    <x-slot name="content">
+                                        <!-- Content slot implementation -->
+                                    </x-slot>
+                                </x-dropdown>
+                            </div>
 
+<<<<<<< HEAD
                         <x-slot name="content">
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Account') }}
                             </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                             @if (Auth::check())
                             <x-dropdown-link href="{{ route('profile.show') }}">
@@ -147,6 +155,12 @@
                                 {{ __('Profile') }}
                             </x-dropdown-link>
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+                            @if (Auth::check())
+                            <x-dropdown-link href="{{ route('profile.show') }}">
+                                  {{ __('Profile') }}
+                             </x-dropdown-link>
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -157,6 +171,7 @@
                             <div class="border-t border-gray-200"></div>
 
                             <!-- Authentication -->
+<<<<<<< HEAD
 <<<<<<< HEAD
                             @if (Auth::check())
                             <form method="POST" action="{{ route('logout') }}" x-data>
@@ -172,15 +187,25 @@
                         @endif
                             </form>
 =======
+=======
+                            @if (Auth::check())
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
-
-                                <x-dropdown-link href="{{ route('logout') }}"
-                                         @click.prevent="$root.submit();">
+                                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
                                     {{ __('Log Out') }}
                                 </x-dropdown-link>
                             </form>
+<<<<<<< HEAD
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+                        @else
+                            <x-dropdown-link href="{{ route('login') }}">
+                                {{ __('Login') }}
+                            </x-dropdown-link>
+                        @endif
+                            </form>
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                         </x-slot>
                     </x-dropdown>
                 </div>
@@ -223,6 +248,9 @@
 
             <div class="mt-3 space-y-1">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
                     <!-- Account Management -->
                          @if (Auth::check())
                             <x-responsive-nav-link href="{{ route('profile.edit') }}" :active="request()->routeIs('profile.edit')">
@@ -240,6 +268,7 @@
                             </x-responsive-nav-link>
                     @endif
                 </div>
+<<<<<<< HEAD
 
 =======
                 <!-- Account Management -->
@@ -253,6 +282,9 @@
                     </x-responsive-nav-link>
                 @endif
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+
+>>>>>>> 9bbb77e (menambahkan jenis sampah)
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}" x-data>
