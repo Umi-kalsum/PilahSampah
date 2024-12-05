@@ -1,16 +1,39 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Sampah</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">HOMPIMPA</div>
+        <ul class="navbar">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('jenis-sampah') }}" class="active">Jenis Sampah</a></li>
+            <li><a href="#">Lokasi TPS</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="{{ url('login') }}">Sign-in</a></li>
+        </ul>
+    </header>
 
-@section('content')
-<header>
-    <h1>Jenis Sampah yang Bisa di Pilah</h1>
-</header>
-<section class="categories">
-    @foreach ($jenisSampah as $jenis => $data)
-        <div class="category">
-            <img src="{{ asset($data['image']) }}" alt="{{ ucfirst($jenis) }}">
-            <p>{{ ucfirst($jenis) }}</p>
-            <a href="{{ route('jenis-sampah.detail', $jenis) }}" class="btn">Lihat Detail</a>
-        </div>
-    @endforeach
-</section>
-@endsection
+    <main>
+        <section class="jenis-sampah">
+            <h1>Jenis Sampah</h1>
+            <div class="cards">
+                @foreach ($jenisSampah as $sampah)
+                    <div class="card">
+                        <img src="{{ asset($sampah['gambar']) }}" alt="{{ $sampah['nama'] }}">
+                        <p>{{ $sampah['nama'] }}</p>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HOMPIMPA</p>
+    </footer>
+</body>
+</html>

@@ -29,10 +29,8 @@ Route::get('about_me', function () {
 
 use App\Http\Controllers\JenisSampahController;
 
-Route::get('/', function () {
-    return view('portal.landingpage'); // Path diperbarui
-})->name('landingpage');
-
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
+Route::get('/kategori', [CategoryController::class, 'index'])->name('kategori.index');
+Route::get('/kategori/{kategori_id}', [CategoryController::class, 'show'])->name('kategori.show');
 
 require __DIR__.'/auth.php';
