@@ -31,11 +31,8 @@ Route::get('about_me', function () {
 <<<<<<< HEAD
 use App\Http\Controllers\JenisSampahController;
 
-Route::get('/', function () {
-    return view('portal.landingpage'); // Path diperbarui
-})->name('landingpage');
-
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
+<<<<<<< HEAD
 =======
 use App\Http\Controllers\SampahController;
 
@@ -50,5 +47,9 @@ Route::get('/', function () {
 
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
+=======
+Route::get('/kategori', [CategoryController::class, 'index'])->name('kategori.index');
+Route::get('/kategori/{kategori_id}', [CategoryController::class, 'show'])->name('kategori.show');
+>>>>>>> ca3563d (re Jenis sampah)
 
 require __DIR__.'/auth.php';
