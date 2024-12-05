@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('layouts.app')
 
 @section('content')
@@ -162,6 +163,28 @@
         </ul>
     </header>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Sampah</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">HOMPIMPA</div>
+        <ul class="navbar">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('jenis-sampah') }}" class="active">Jenis Sampah</a></li>
+            <li><a href="#">Lokasi TPS</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="{{ url('login') }}">Sign-in</a></li>
+        </ul>
+    </header>
+
+>>>>>>> ca3563d (re Jenis sampah)
     <main>
         <section class="jenis-sampah">
             <h1>Jenis Sampah</h1>
@@ -181,6 +204,7 @@
     </footer>
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> ca3563d (re Jenis sampah)
 =======
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
@@ -188,3 +212,5 @@
 </section>
 @endsection
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
+=======
+>>>>>>> ca3563d (re Jenis sampah)

@@ -606,6 +606,9 @@ footer {
     border-radius: 10px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ca3563d (re Jenis sampah)
  /* style untuk jenis sampah */
  .cards {
     display: flex;
@@ -626,13 +629,17 @@ footer {
 }
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+>>>>>>> ca3563d (re Jenis sampah)
 }
 
 header {
     background-color: #4CAF50;
     color: white;
+<<<<<<< HEAD
     padding: 10px 20px;
     text-align: center;
 }
@@ -652,6 +659,10 @@ header {
     text-decoration: none;
     color: white;
     font-size: 16px;
+=======
+    text-align: center;
+    padding: 20px;
+>>>>>>> ca3563d (re Jenis sampah)
 }
 
 .categories, .items {
@@ -659,6 +670,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+<<<<<<< HEAD
     padding: 20px;
 }
 
@@ -668,12 +680,24 @@ header {
     padding: 10px;
     border-radius: 8px;
     width: 150px;
+=======
+    margin: 20px;
+}
+
+.category, .item {
+    width: 150px;
+    text-align: center;
+>>>>>>> ca3563d (re Jenis sampah)
 }
 
 .category img, .item img {
     width: 100px;
     height: 100px;
     border-radius: 8px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 10px;
+>>>>>>> ca3563d (re Jenis sampah)
 }
 
 footer {
@@ -682,5 +706,8 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> ca3563d (re Jenis sampah)
