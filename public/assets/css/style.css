@@ -8,14 +8,20 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Landingpage */
 /* Global styles */
 =======
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+/* Landingpage */
+/* Global styles */
+>>>>>>> 00bb400 (memperbarui lp)
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
     line-height: 1.6;
 }
@@ -56,48 +62,43 @@ header .navbar li .btn {
     box-sizing: border-box;
     background-color: var(--light-gray);
     color: var(--text-gray);
+=======
+    line-height: 1.6;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
-/* Header */
 header {
-    background-color: var(--primary-blue);
-    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    background-color: #0047ab; /* Warna biru */
+    color: white;
 }
 
 header .logo {
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--white);
 }
 
-header ul {
+header .navbar {
     list-style: none;
     display: flex;
-    gap: 20px;
-    align-items: center;
+    gap: 15px;
 }
 
-header ul li a {
+header .navbar li a {
+    color: white;
     text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
+    font-size: 1rem;
 }
 
-header ul li .btn {
-    padding: 6px 14px;
-    background-color: var(--dark-blue);
-    color: var(--white);
+header .navbar li .btn {
+    background-color: white;
+    color: #0047ab;
+    padding: 5px 10px;
     border-radius: 5px;
+<<<<<<< HEAD
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -108,11 +109,15 @@ header ul li .btn {
     object-fit: cover;
     border-radius: 5px; 
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+    text-decoration: none;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 /* Hero Section */
 .hero {
     display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
     align-items: center;
     justify-content: space-between;
@@ -123,20 +128,25 @@ header ul li .btn {
 .hero-text {
 =======
     justify-content: space-between;
+=======
+>>>>>>> 00bb400 (memperbarui lp)
     align-items: center;
-    padding: 120px 40px 40px; /* Adjusted for fixed header */
-    background-color: var(--light-blue);
-    height: 100vh;
-    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #e6f0ff;
 }
 
 .hero-text {
+<<<<<<< HEAD
     flex: 1;
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> 00bb400 (memperbarui lp)
     max-width: 50%;
 }
 
 .hero-text h1 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -158,27 +168,37 @@ header ul li .btn {
     margin-bottom: 20px;
     color: var(--primary-blue);
     line-height: 1.2;
+=======
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 .hero-text p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .hero-text .btn {
-    padding: 12px 25px;
-    background-color: var(--primary-blue);
-    color: var(--white);
+    padding: 10px 15px;
+    background-color: #0047ab;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
+<<<<<<< HEAD
     text-transform: uppercase;
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 .hero-image img {
     max-width: 100%;
     height: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 /* Cards Section */
@@ -192,6 +212,7 @@ header ul li .btn {
 .card img {
     width: 100px;
     height: 100px;
+<<<<<<< HEAD
     border-radius: 10px;
 }
 
@@ -211,6 +232,20 @@ footer {
 }
 
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0047ab;
+    color: white;
+    padding: 20px 0;
+}
+
+
+>>>>>>> 00bb400 (memperbarui lp)
 /* Jenis Sampah Section */
 .jenis-sampah {
     padding: 40px;
@@ -630,15 +665,21 @@ footer {
 body {
     font-family: Arial, sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 =======
 >>>>>>> ca3563d (re Jenis sampah)
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 header {
     background-color: #4CAF50;
     color: white;
+<<<<<<< HEAD
 <<<<<<< HEAD
     padding: 10px 20px;
     text-align: center;
@@ -663,6 +704,27 @@ header {
     text-align: center;
     padding: 20px;
 >>>>>>> ca3563d (re Jenis sampah)
+=======
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 .categories, .items {
@@ -670,6 +732,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+<<<<<<< HEAD
 <<<<<<< HEAD
     padding: 20px;
 }
@@ -682,12 +745,21 @@ header {
     width: 150px;
 =======
     margin: 20px;
+=======
+    padding: 20px;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 .category, .item {
-    width: 150px;
     text-align: center;
+<<<<<<< HEAD
 >>>>>>> ca3563d (re Jenis sampah)
+=======
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 .category img, .item img {
@@ -695,9 +767,12 @@ header {
     height: 100px;
     border-radius: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     margin-bottom: 10px;
 >>>>>>> ca3563d (re Jenis sampah)
+=======
+>>>>>>> 00bb400 (memperbarui lp)
 }
 
 footer {

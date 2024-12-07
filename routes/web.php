@@ -36,6 +36,7 @@ Route::get('about_me', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\JenisSampahController;
 
 <<<<<<< HEAD
@@ -103,5 +104,19 @@ Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jeni
 Route::get('/kategori', [CategoryController::class, 'index'])->name('kategori.index');
 Route::get('/kategori/{kategori_id}', [CategoryController::class, 'show'])->name('kategori.show');
 >>>>>>> ca3563d (re Jenis sampah)
+=======
+Route::get('/jenis-sampah', function () {
+    return view('portal.jenis-sampah');
+})->name('jenis-sampah');
+
+Route::get('/jenis-sampah/{id}', function ($id) {
+    return view('portal.detail-jenis-sampah', ['id' => $id]);
+})->name('detail-jenis-sampah');
+
+Route::get('login', function () {
+    return 'Login Page'; // Ganti dengan halaman login Anda
+})->name('login');
+
+>>>>>>> 00bb400 (memperbarui lp)
 
 require __DIR__.'/auth.php';

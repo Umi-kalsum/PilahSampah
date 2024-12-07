@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 <body>
+<<<<<<< HEAD
     <header >
+=======
+    <header>
+>>>>>>> 00bb400 (memperbarui lp)
         <h1>Detail Jenis Sampah</h1>
     </header>
 
     <main>
         <div class="detail-container">
             <div class="image">
+<<<<<<< HEAD
                 <img src="{{ asset('assets/images/pet-bottle.png') }}" alt="Detail Gambar">
             </div>
             <div class="detail-content">
@@ -42,6 +47,20 @@
                 didaur ulang menjadi barang baru seperti pipa, kontainer penyimpanan, atau peralatan rumah tangga. 
                 Plastik HDPE biasanya memiliki warna solid seperti putih, hijau, atau biru, dan harus dipisahkan 
                 dari bahan lain sebelum proses daur ulang. 
+=======
+                <img src="{{ asset('assets/images/plastik.png') }}" alt="Detail Gambar">
+            </div>
+            <div class="detail-content">
+                <h2>Pet Botol</h2>
+                <p class="price">Harga per KG: Rp. 5.000</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies semper aenean sed sit ut. 
+                    Risus interdum metus non facilisis aliquet erat aliquet imperdiet pulvinar. 
+                </p>
+                <p>
+                    Justo magna odio pharetra est semper nisi. Nunc, euismod mauris nam sem. 
+                    Velit fermentum porttitor praesent ac. Feugiat nam ipsum ut tincidunt at fermentum suspendisse.
+>>>>>>> 00bb400 (memperbarui lp)
                 </p>
             </div>
         </div>

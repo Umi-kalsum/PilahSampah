@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOMPIMPA - Jasa Pengelola Sampah</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 =======
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> <!-- Gunakan helper asset() -->
 </head>  
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+>>>>>>> 00bb400 (memperbarui lp)
 <body>
 <header>
     <div class="logo">HOMPIMPA</div>
     <ul class="navbar">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>
         <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
@@ -26,30 +32,44 @@
 =======
         <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>    
         <li><a href="{{ url('/jenis-sampah') }}">Jenis Sampah</a></li>
+=======
+        <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>
+        <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
+>>>>>>> 00bb400 (memperbarui lp)
         <li><a href="#">Lokasi TPS</a></li>
-        <li><a href="#">Artikel</a></li>
-        <li><a href="{{ url('login') }}" class="btn">Sign-in</a></li>
+        <li><a href="#artikel">Artikel</a></li>
+        <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
     </ul>
+<<<<<<< HEAD
 </header>   
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+</header>
+>>>>>>> 00bb400 (memperbarui lp)
 
 <main>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 00bb400 (memperbarui lp)
             <h1>Hi everyone, Welcome to HOMPIMPA</h1>
             <p>
                 Selamat datang di HOMPIMPA! Mari bersama-sama menjaga lingkungan dengan cara yang kreatif dan menyenangkan.
                 Di sini, kamu dapat belajar cara mengelola sampah, berbagi ide daur ulang, dan berkolaborasi untuk menciptakan dunia
                 yang lebih bersih dan sehat. Jadilah bagian dari perubahan!
             </p>
+<<<<<<< HEAD
 =======
             <h1>Hi everyone, Welcome to HOMPIMPA</h1>        
             <p>Selamat datang di HOMPIMPA! Mari bersama-sama menjaga lingkungan dengan cara yang kreatif dan menyenangkan. 
                 Di sini, kamu dapat belajar cara mengelola sampah, berbagi ide daur ulang, dan berkolaborasi untuk menciptakan dunia 
                 yang lebih bersih dan sehat. Jadilah bagian dari perubahan!</p>
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> 00bb400 (memperbarui lp)
             <a href="#" class="btn">Mulai Pilah Sampah</a>
         </div>
         <div class="hero-image">
@@ -62,11 +82,15 @@
         <h2>Jenis Sampah</h2>
         <div class="cards">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 00bb400 (memperbarui lp)
             <div class="card"><img src="{{ asset('assets/icons/botol.png') }}" alt="Ikon Sampah Botol"></div>
             <div class="card"><img src="{{ asset('assets/icons/kertas.jpeg') }}" alt="Ikon Sampah Kertas"></div>
             <div class="card"><img src="{{ asset('assets/icons/organik.png') }}" alt="Ikon Sampah Organik"></div>
             <div class="card"><img src="{{ asset('assets/icons/logam.jpeg') }}" alt="Ikon Sampah Logam"></div>
             <div class="card"><img src="{{ asset('assets/icons/plastik.jpeg') }}" alt="Ikon Sampah Plastik"></div>
+<<<<<<< HEAD
         </div>
         <a href="{{ route('jenis-sampah') }}" class="btn">Lihat Jenis Sampah</a>
 =======
@@ -75,6 +99,8 @@
             <div class="card"><img src="{{ asset('assets/icons/organik.png') }}" alt="Sampah 3"></div>
             <div class="card"><img src="{{ asset('assets/icons/logam.jpeg') }}" alt="Sampah 4"></div>
             <div class="card"><img src="{{ asset('assets/icons/plastik.jpeg') }}" alt="Sampah 5"></div>
+=======
+>>>>>>> 00bb400 (memperbarui lp)
         </div>
         <a href="{{ url('jenis_sampah') }}" class="btn">Lihat Jenis Sampah</a>
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
@@ -93,6 +119,9 @@
     </section>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 00bb400 (memperbarui lp)
     <!-- Artikel Section -->
     <section class="artikel" id="artikel">
         <h2>Artikel</h2>
@@ -120,6 +149,7 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Just to Remind Section -->
     <section class="just-to-remind">
         <div class="content">
@@ -134,6 +164,15 @@
         <div class="remind-image">
             <img src="{{ asset('assets/images/just-to-remind.jpg') }}" alt="Just to Remind">
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+    <!-- Just to Remind Section -->
+    <section class="just-to-remind">
+        <div class="content">
+            <h2>Just to remind you, we are HOMPIMPA. Service provider in managing various types of waste.</h2>
+            <div class="image">
+                <img src="{{ asset('assets/images/just-to-remind.jpg') }}" alt="Just to Remind">
+            </div>
+>>>>>>> 00bb400 (memperbarui lp)
         </div>
     </section>
 </main>
@@ -145,8 +184,11 @@
     </div>
 </footer>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+>>>>>>> 00bb400 (memperbarui lp)
 </body>
 </html>

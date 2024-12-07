@@ -1227,6 +1227,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v11.34.1",
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
             "source": {
@@ -1301,6 +1302,16 @@
             },
             "dist": {
                 "type": "zip",
+=======
+            "version": "v11.34.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "865da6d73dd353f07a7bcbd778c55966a620121f"
+            },
+            "dist": {
+                "type": "zip",
+>>>>>>> 00bb400 (memperbarui lp)
                 "url": "https://api.github.com/repos/laravel/framework/zipball/865da6d73dd353f07a7bcbd778c55966a620121f",
                 "reference": "865da6d73dd353f07a7bcbd778c55966a620121f",
                 "shasum": ""
@@ -1503,6 +1514,7 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2024-11-27T15:43:57+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "laravel/jetstream",
@@ -1570,6 +1582,8 @@
                 "source": "https://github.com/laravel/jetstream"
             },
             "time": "2024-11-13T13:59:38+00:00"
+=======
+>>>>>>> 00bb400 (memperbarui lp)
         },
         {
             "name": "laravel/jetstream",
@@ -2267,18 +2281,22 @@
         {
             "name": "livewire/livewire",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v3.5.17",
 =======
             "version": "v3.5.16",
+=======
+            "version": "v3.5.17",
+>>>>>>> 00bb400 (memperbarui lp)
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "0b842088d716cadaf9d94fc4f096bc688db29d65"
+                "reference": "7bbf80d93db9b866776bf957ca6229364bca8d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/0b842088d716cadaf9d94fc4f096bc688db29d65",
-                "reference": "0b842088d716cadaf9d94fc4f096bc688db29d65",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/7bbf80d93db9b866776bf957ca6229364bca8d87",
+                "reference": "7bbf80d93db9b866776bf957ca6229364bca8d87",
                 "shasum": ""
             },
             "require": {
@@ -2333,7 +2351,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.5.16"
+                "source": "https://github.com/livewire/livewire/tree/v3.5.17"
             },
             "funding": [
                 {
@@ -2341,7 +2359,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-02T15:57:58+00:00"
+            "time": "2024-12-06T13:41:21+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2409,6 +2427,7 @@
         },
         {
             "name": "monolog/monolog",
+<<<<<<< HEAD
             "version": "3.8.0",
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
             "source": {
@@ -2558,6 +2577,16 @@
             },
             "dist": {
                 "type": "zip",
+=======
+            "version": "3.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "aef6ee73a77a66e404dd6540934a9ef1b3c855b4"
+            },
+            "dist": {
+                "type": "zip",
+>>>>>>> 00bb400 (memperbarui lp)
                 "url": "https://api.github.com/repos/Seldaek/monolog/zipball/aef6ee73a77a66e404dd6540934a9ef1b3c855b4",
                 "reference": "aef6ee73a77a66e404dd6540934a9ef1b3c855b4",
                 "shasum": ""
