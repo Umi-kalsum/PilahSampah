@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Pilah Sampah</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Pilah Sampah</h1>
-    </header>
-    <section class="categories">
-        <?php foreach ($kategori as $kat): ?>
-        <div class="category">
-            <a href="kategori.php?id=<?= $kat['id']; ?>">
-                <img src="assets/icons/<?= $kat['gambar']; ?>" alt="<?= $kat['nama']; ?>">
-                <p><?= $kat['nama']; ?></p>
-            </a>
-        </div>
-        <?php endforeach; ?>
-    </section>
-</body>
-</html>
 <?php
-
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
