@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Artikel</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .artikel { margin-bottom: 20px; }
-        .artikel img { width: 300px; height: 200px; object-fit: cover; }
-    </style>
+    <title>Daftar Artikel - HOMPIMPA</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 <body>
+<header>
+    <div class="logo">HOMPIMPA</div>
+    <ul class="navbar">
+        <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>
+        <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
+        <li><a href="#">Lokasi TPS</a></li>
+        <li><a href="{{ route('artikel.daftar') }}">Artikel</a></li>
+        <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
+    </ul>
+</header>
+
+<main>
     <h1>Daftar Artikel</h1>
-
-    <!-- Artikel 1 -->
-    <div class="artikel">
-        <h2>Mengurangi Sampah Plastik</h2>
-        <p>Tahukah Anda bahwa plastik membutuhkan lebih dari 100 tahun untuk terurai?</p>
-        <img src="/images/artikel1.jpg" alt="Mengurangi Sampah Plastik">
-        <p>
-            <a href="/detail-artikel/1">Read More</a>
-        </p>
+    <div class="article-container">
+        @foreach ($artikels as $artikel)
+            <div class="article">
+                <img src="{{ asset('assets/images/' . $artikel['gambar']) }}" alt="{{ $artikel['judul'] }}" class="article-image">
+                <h2>{{ $artikel['judul'] }}</h2>
+                <p>{{ $artikel['deskripsi'] }}</p>
+                <a href="{{ route('artikel.detail', $artikel['id']) }}" class="read-more">Read More</a>
+            </div>
+        @endforeach
     </div>
+</main>
 
-    <!-- Artikel 2 -->
-    <div class="artikel">
-        <h2>Cara Efektif Mengelola Sampah</h2>
-        <p>Pengelolaan sampah yang baik dapat membantu menjaga lingkungan kita...</p>
-        <img src="/images/artikel2.jpg" alt="Cara Efektif Mengelola Sampah">
-        <p>
-            <a href="/detail-artikel/2">Read More</a>
-        </p>
+<footer>
+    <div class="footer-content">
+        <p>HOMPIMPA - Jasa pengelola sampah</p>
+        <p>Email: hompimpa@website.com</p>
     </div>
+</footer>
 </body>
 </html>

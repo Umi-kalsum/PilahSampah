@@ -13,7 +13,7 @@
         <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>
         <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
         <li><a href="#">Lokasi TPS</a></li>
-        <li><a href="#artikel">Artikel</a></li>
+        <li><a href="{{ route('artikel.daftar') }}">Artikel</a></li>
         <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
     </ul>
 </header>

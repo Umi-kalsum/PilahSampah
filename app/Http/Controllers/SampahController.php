@@ -8,6 +8,7 @@ class SampahController extends Controller
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
     private $jenis_sampah = [
@@ -242,5 +243,17 @@ class SampahController extends Controller
         }
         return abort(404, 'Item tidak ditemukan');
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
+=======
+    public function index()
+    {
+        // Sample data
+        $sampahs = [
+            ['id' => 1, 'nama' => 'Plastik', 'jenis' => 'Anorganik', 'harga' => 2000],
+            ['id' => 2, 'nama' => 'Kertas', 'jenis' => 'Anorganik', 'harga' => 1500],
+            ['id' => 3, 'nama' => 'Sisa Makanan', 'jenis' => 'Organik', 'harga' => 1000],
+        ];
+
+        return view('portal.kelola-sampah', compact('sampahs'));
+>>>>>>> e0712a9 (login& regis)
     }
 }
