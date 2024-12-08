@@ -3,9 +3,12 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArtikelController;
+<<<<<<< HEAD
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SampahController;
 use App\Http\Middleware\AdminMiddleware;
+=======
+>>>>>>> df0d3fe (menambahkan view portal login& register)
 
 Route::domain('admin.'.env('APP_URL'))->group(function(){
     Route::get('/', function () {
@@ -78,6 +81,7 @@ Route::get('login', function () {
     return 'Login Page'; // Ganti dengan halaman login Anda
 })->name('login');
 
+<<<<<<< HEAD
 Route::get('/portal/artikel', [ArtikelController::class, 'daftarArtikel'])->name('artikel.daftar');
 Route::get('/portal/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('artikel.detail');
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -118,5 +122,10 @@ Route::get('login', function () {
 })->name('login');
 
 >>>>>>> 00bb400 (memperbarui lp)
+=======
+Route::get('/artikel', [ArtikelController::class, 'daftarArtikel'])->name('daftar-artikel');
+
+Route::get('/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('detail-artikel');
+>>>>>>> df0d3fe (menambahkan view portal login& register)
 
 require __DIR__.'/auth.php';

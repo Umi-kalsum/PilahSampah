@@ -14,14 +14,20 @@ return new class extends Migration
         Schema::create('artikels', function (Blueprint $table) {
             $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> df0d3fe (menambahkan view portal login& register)
             $table->string('judul');
             $table->text('deskripsi');
             $table->text('konten');
             $table->string('gambar')->nullable(); // Gambar artikel
             $table->timestamps(); // Timestamps untuk created_at dan updated_at
+<<<<<<< HEAD
 =======
             $table->timestamps();
 >>>>>>> 00bb400 (memperbarui lp)
+=======
+>>>>>>> df0d3fe (menambahkan view portal login& register)
         });
     }
 
