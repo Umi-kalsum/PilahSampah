@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArtikelController;
 
 Route::domain('admin.'.env('APP_URL'))->group(function(){
     Route::get('/', function () {
@@ -65,6 +66,12 @@ Route::get('login', function () {
     return 'Login Page'; // Ganti dengan halaman login Anda
 })->name('login');
 
+<<<<<<< HEAD
 >>>>>>> 00bb400 (memperbarui lp)
+=======
+Route::get('/artikel', [ArtikelController::class, 'daftarArtikel'])->name('daftar-artikel');
+
+Route::get('/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('detail-artikel');
+>>>>>>> df0d3fe (menambahkan view portal login& register)
 
 require __DIR__.'/auth.php';
