@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SampahController;
 
 Route::domain('admin.'.env('APP_URL'))->group(function(){
     Route::get('/', function () {
@@ -40,8 +42,19 @@ Route::get('login', function () {
     return 'Login Page'; // Ganti dengan halaman login Anda
 })->name('login');
 
-Route::get('/artikel', [ArtikelController::class, 'daftarArtikel'])->name('daftar-artikel');
+Route::get('/portal/artikel', [ArtikelController::class, 'daftarArtikel'])->name('artikel.daftar');
+Route::get('/portal/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('artikel.detail');
+Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('login', [AuthController::class, 'login'])->name('login.post');
+Route::get('register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::post('register', [AuthController::class, 'register'])->name('register.post');
+Route::get('dashboard', function () {
+    return view('portal.dashboard');
+})->name('dashboard')->middleware('auth');
 
-Route::get('/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('detail-artikel');
+// Logout Route
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('kelola-sampah', [SampahController::class, 'index'])->name('sampah.kelola');
 
 require __DIR__.'/auth.php';
