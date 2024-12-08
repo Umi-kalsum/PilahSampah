@@ -4,11 +4,16 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArtikelController;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SampahController;
 use App\Http\Middleware\AdminMiddleware;
 =======
 >>>>>>> df0d3fe (menambahkan view portal login& register)
+=======
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SampahController;
+>>>>>>> e0712a9 (login& regis)
 
 Route::domain('admin.'.env('APP_URL'))->group(function(){
     Route::get('/', function () {
@@ -82,6 +87,9 @@ Route::get('login', function () {
 })->name('login');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0712a9 (login& regis)
 Route::get('/portal/artikel', [ArtikelController::class, 'daftarArtikel'])->name('artikel.daftar');
 Route::get('/portal/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('artikel.detail');
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -91,6 +99,7 @@ Route::post('register', [AuthController::class, 'register'])->name('register.pos
 Route::get('dashboard', function () {
     return view('portal.dashboard');
 })->name('dashboard')->middleware('auth');
+<<<<<<< HEAD
 
 // Logout Route
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
@@ -127,5 +136,12 @@ Route::get('/artikel', [ArtikelController::class, 'daftarArtikel'])->name('dafta
 
 Route::get('/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('detail-artikel');
 >>>>>>> df0d3fe (menambahkan view portal login& register)
+=======
+
+// Logout Route
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('kelola-sampah', [SampahController::class, 'index'])->name('sampah.kelola');
+>>>>>>> e0712a9 (login& regis)
 
 require __DIR__.'/auth.php';

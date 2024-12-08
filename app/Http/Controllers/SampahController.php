@@ -11,6 +11,7 @@ class SampahController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
@@ -249,6 +250,8 @@ class SampahController extends Controller
         return abort(404, 'Item tidak ditemukan');
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
+=======
+>>>>>>> e0712a9 (login& regis)
     public function index()
     {
         // Sample data
@@ -259,6 +262,7 @@ class SampahController extends Controller
         ];
 
         return view('portal.kelola-sampah', compact('sampahs'));
+<<<<<<< HEAD
 >>>>>>> e0712a9 (login& regis)
 =======
 =======
@@ -283,5 +287,7 @@ class SampahController extends Controller
         }
         return abort(404, 'Item tidak ditemukan');
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
+=======
+>>>>>>> e0712a9 (login& regis)
     }
 }

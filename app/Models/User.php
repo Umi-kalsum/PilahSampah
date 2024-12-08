@@ -4,12 +4,10 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Fortify\TwoFactorAuthenticatable;
-use Laravel\Jetstream\HasProfilePhoto;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     use Notifiable;
 =======
@@ -21,6 +19,9 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+    use Notifiable;
+>>>>>>> e0712a9 (login& regis)
 
     protected $fillable = [
         'name',
@@ -31,9 +32,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
-        'two_factor_recovery_codes',
-        'two_factor_secret',
     ];
+<<<<<<< HEAD
 
     /**
      * The accessors to append to the model's array form.
@@ -43,4 +43,6 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+=======
+>>>>>>> e0712a9 (login& regis)
 }

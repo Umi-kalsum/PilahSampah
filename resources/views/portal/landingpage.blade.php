@@ -26,6 +26,7 @@
         <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
         <li><a href="#">Lokasi TPS</a></li>
         <li><a href="{{ route('artikel.daftar') }}">Artikel</a></li>
+<<<<<<< HEAD
         <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
     </ul>
 </header>
@@ -38,6 +39,8 @@
 >>>>>>> 00bb400 (memperbarui lp)
         <li><a href="#">Lokasi TPS</a></li>
         <li><a href="#artikel">Artikel</a></li>
+=======
+>>>>>>> e0712a9 (login& regis)
         <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
     </ul>
 <<<<<<< HEAD

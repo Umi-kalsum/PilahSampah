@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Detail Artikel</title>
 <<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('css/portal.css') }}">
@@ -31,31 +32,42 @@
         body { font-family: Arial, sans-serif; margin: 20px; }
         .content img { width: 400px; height: 300px; object-fit: cover; margin-bottom: 20px; }
     </style>
+=======
+    <title>{{ $artikel['judul'] }} - HOMPIMPA</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+>>>>>>> e0712a9 (login& regis)
 </head>
 <body>
-    <div class="content">
-        @if($id == 1)
-            <!-- Artikel 1 -->
-            <h1>Mengurangi Sampah Plastik</h1>
-            <img src="/images/artikel1.jpg" alt="Mengurangi Sampah Plastik">
-            <p>Tahukah Anda bahwa plastik membutuhkan lebih dari 100 tahun untuk terurai?</p>
-            <p>Artikel ini membahas langkah-langkah untuk mengurangi sampah plastik...</p>
-        @elseif($id == 2)
-            <!-- Artikel 2 -->
-            <h1>Cara Efektif Mengelola Sampah</h1>
-            <img src="/images/artikel2.jpg" alt="Cara Efektif Mengelola Sampah">
-            <p>Pengelolaan sampah yang baik dapat membantu menjaga lingkungan kita...</p>
-            <p>Mengelola sampah dengan cara yang efektif sangat penting...</p>
-        @else
-            <!-- Artikel Tidak Ditemukan -->
-            <h1>Artikel Tidak Ditemukan</h1>
-            <p>Maaf, artikel yang Anda cari tidak tersedia.</p>
-        @endif
-    </div>
+<header>
+    <div class="logo">HOMPIMPA</div>
+    <ul class="navbar">
+        <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>
+        <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
+        <li><a href="#">Lokasi TPS</a></li>
+        <li><a href="{{ route('artikel.daftar') }}">Artikel</a></li>
+        <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
+    </ul>
+</header>
 
+<<<<<<< HEAD
     <p>
         <a href="/daftar-artikel">Back to Daftar Artikel</a>
     </p>
 >>>>>>> df0d3fe (menambahkan view portal login& register)
+=======
+<main>
+    <h1>{{ $artikel['judul'] }}</h1>
+    <img src="{{ asset('assets/images/' . $artikel['gambar']) }}" alt="{{ $artikel['judul'] }}" class="article-image">
+    <p>{{ $artikel['konten'] }}</p>
+    <a href="{{ route('artikel.daftar') }}" class="btn">Kembali ke Daftar Artikel</a>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>HOMPIMPA - Jasa pengelola sampah</p>
+        <p>Email: hompimpa@website.com</p>
+    </div>
+</footer>
+>>>>>>> e0712a9 (login& regis)
 </body>
 </html>
