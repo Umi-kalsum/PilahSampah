@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('artikels', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('judul');
+            $table->text('deskripsi');
+            $table->text('konten');
+            $table->string('gambar')->nullable(); // Gambar artikel
+            $table->timestamps(); // Timestamps untuk created_at dan updated_at
         });
     }
 
