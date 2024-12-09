@@ -45,7 +45,7 @@
             <div class="card"><img src="{{ asset('assets/icons/logam.jpeg') }}" alt="Ikon Sampah Logam"></div>
             <div class="card"><img src="{{ asset('assets/icons/plastik.jpeg') }}" alt="Ikon Sampah Plastik"></div>
         </div>
-        <a href="{{ url('jenis_sampah') }}" class="btn">Lihat Jenis Sampah</a>
+        <a href="{{ route('jenis-sampah') }}" class="btn">Lihat Jenis Sampah</a>
     </section>
 
     <!-- Lokasi TPS Section -->
