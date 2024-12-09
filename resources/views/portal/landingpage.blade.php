@@ -105,8 +105,12 @@
 =======
 >>>>>>> 00bb400 (memperbarui lp)
         </div>
+<<<<<<< HEAD
         <a href="{{ url('jenis_sampah') }}" class="btn">Lihat Jenis Sampah</a>
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
+=======
+        <a href="{{ route('jenis-sampah') }}" class="btn">Lihat Jenis Sampah</a>
+>>>>>>> 218f793 (edit artikel)
     </section>
 
     <!-- Lokasi TPS Section -->
