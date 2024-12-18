@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $artikel['judul'] }} - HOMPIMPA</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <title>Detail Artikel</title>
+    <link rel="stylesheet" href="{{ asset('css/portal.css') }}">
 </head>
 <body>
-<header>
-    <div class="logo">HOMPIMPA</div>
-    <ul class="navbar">
-        <li><a href="{{ url('about_me') }}" class="text">About Me</a></li>
-        <li><a href="{{ route('jenis-sampah') }}">Jenis Sampah</a></li>
-        <li><a href="#">Lokasi TPS</a></li>
-        <li><a href="{{ route('artikel.daftar') }}">Artikel</a></li>
-        <li><a href="{{ route('login') }}" class="btn">Sign-in</a></li>
-    </ul>
-</header>
+    <header class="header">
+        <h1>{{ $article->title }}</h1>
+    </header>
 
-<main>
-    <h1>{{ $artikel['judul'] }}</h1>
-    <img src="{{ asset('assets/images/' . $artikel['gambar']) }}" alt="{{ $artikel['judul'] }}" class="article-image">
-    <p>{{ $artikel['konten'] }}</p>
-    <a href="{{ route('artikel.daftar') }}" class="btn">Kembali ke Daftar Artikel</a>
-</main>
+    <main class="content">
+        <article class="article-detail">
+            <p class="article-meta">Diposting pada: {{ $article->created_at->format('d M Y') }}</p>
+            <div class="article-body">
+                {!! $article->content !!}
+            </div>
+        </article>
 
-<footer>
-    <div class="footer-content">
-        <p>HOMPIMPA - Jasa pengelola sampah</p>
-        <p>Email: hompimpa@website.com</p>
-    </div>
-</footer>
+        <a href="{{ route('artikel.daftar') }}" class="back-link">← Kembali ke Daftar Artikel</a>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Portal Artikel</p>
+    </footer>
 </body>
 </html>

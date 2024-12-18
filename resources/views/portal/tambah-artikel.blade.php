@@ -11,11 +11,11 @@
         </div>
         <div class="mb-3">
             <label for="deskripsi">Deskripsi</label>
-            <textarea name="deskripsi" id="deskripsi" class="form-control" required></textarea>
+            <textarea name="deskripsi" id="deskripsi" rows="3" class="form-control" required></textarea>
         </div>
         <div class="mb-3">
             <label for="konten">Konten</label>
-            <textarea name="konten" id="konten" class="form-control" required></textarea>
+            <textarea name="konten" id="konten" rows="5" class="form-control" required></textarea>
         </div>
         <div class="mb-3">
             <label for="gambar">Gambar</label>
