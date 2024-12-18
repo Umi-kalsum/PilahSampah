@@ -8,9 +8,9 @@ Route::domain('admin.'.env('APP_URL'))->group(function(){
         return view('welcome');
     });
 });
-
+//landingpage
 Route::get('/', function () {
-    return view('portal.welcome');
+    return view('portal.landingpage');
 });
 
 Route::get('/dashboard', function () {
@@ -18,9 +18,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('portal.edit-profile');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('portal.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('portal.destroy');
 });
 
 require __DIR__.'/auth.php';
