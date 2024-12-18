@@ -9,6 +9,11 @@ use App\Http\Middleware\AdminMiddleware;
 
 class ArtikelController extends Controller
 {
+    public function __construct()
+    {
+        // Middleware hanya diterapkan pada metode CRUD untuk admin
+        $this->middleware('admin')->only(['tambahArtikel', 'simpanArtikel', 'editArtikel', 'updateArtikel', 'hapusArtikel']);
+    }
 
     // Menampilkan daftar artikel
     public function daftarArtikel()
