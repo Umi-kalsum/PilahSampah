@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -134,6 +135,8 @@
 <<<<<<< HEAD
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
+=======
+>>>>>>> 05483c3 (View portal artikel)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -173,7 +176,10 @@
         <p>&copy; 2024 Pilah Sampah. All rights reserved.</p>
     </footer>
 </body>
+<<<<<<< HEAD
 >>>>>>> 05483c3 (View portal artikel)
 =======
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
+=======
+>>>>>>> 05483c3 (View portal artikel)
 </html>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 05483c3 (View portal artikel)
     <title>Login</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +33,7 @@
             margin-bottom: 1rem;
         }
     </style>
+<<<<<<< HEAD
 </head>
 <body>
     <div class="login-card">
@@ -57,43 +61,36 @@
 =======
     <title>Login - HOMPIMPA</title>
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+=======
+>>>>>>> 05483c3 (View portal artikel)
 </head>
 <body>
-    <header>
-        <div class="logo">HOMPIMPA</div>
-    </header>
-
-    <main class="auth-container">
-        <div class="form-box">
-            <h1>Login</h1>
-            @if(session('success'))
-            <div class="alert alert-success">
-                {{ session('success') }}
+    <div class="login-card">
+        <h1 class="text-center">Login</h1>
+        <p class="text-center text-muted">Silakan masuk menggunakan akun Anda.</p>
+        <form action="{{ route('authenticate') }}" method="POST">
+            @csrf
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan email Anda" required>
             </div>
-              @endif
-
-            <form method="POST" action="{{ route('login.post') }}">
-                @csrf
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
-                </div>
-                <button type="submit" class="btn">Login</button>
-            </form>
-            <p>Belum punya akun? <a href="{{ route('register') }}">Register</a></p>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Masukkan password Anda" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">LOGIN</button>
+        </form>
+        <div class="mt-3 text-center">
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
         </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>HOMPIMPA - Jasa Pengelola Sampah</p>
-            <p>Email: hompimpa@website.com</p>
+        <div class="mt-2 text-center">
+            <p class="mb-0">Belum punya akun? <a href="{{ route('register') }}" class="text-decoration-none">Daftar sekarang</a></p>
         </div>
+<<<<<<< HEAD
     </footer>
 >>>>>>> e0712a9 (login& regis)
+=======
+    </div>
+>>>>>>> 05483c3 (View portal artikel)
 </body>
 </html>
