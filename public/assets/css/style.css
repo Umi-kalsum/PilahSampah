@@ -325,8 +325,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* untuk sampahcontroler */
-/* Gaya umum untuk body */
+/* untuk jenis sampah */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -335,94 +334,61 @@ body {
 }
 
 /* Header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 header {
-    background-color: #2196F3; /* Warna biru */
+    background-color: #4CAF50;
     color: white;
-    text-align: center;
     padding: 20px 0;
-}
-
-/* Kategori Sampah */
-.categories {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-}
-
-/* Gaya untuk setiap kategori */
-.category {
     text-align: center;
-    width: 150px;
-    padding: 10px;
-    background-color: #e9e9e9;
-    border-radius: 8px;
 }
-
-.category img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-
-/* Nama kategori */
-.category p {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Daftar item dalam kategori */
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.categories, .items {
     padding: 20px;
 }
-
-/* Gaya untuk setiap item */
-.item {
+.categories {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+}
+.category, .item {
     text-align: center;
     margin: 10px;
     width: 150px;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.item img {
+.category img, .item img {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
     border-radius: 8px;
 }
-
-/* Nama item */
-.item p {
-    font-size: 14px;
+.category p, .item p {
+    font-size: 16px;
     font-weight: bold;
 }
-
-/* Tautan untuk detail item */
 .item a {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #2196F3; /* Warna biru */
+    background-color: #4CAF50;
     color: white;
     text-decoration: none;
     border-radius: 4px;
 }
-
 .item a:hover {
-    background-color: #1976D2; /* Warna biru sedikit lebih gelap saat hover */
+    background-color: #45a049;
 }
-
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 /* Footer */
 footer {
     background-color: #333;
