@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
-use App\Models\Article; // Pastikan model Article sudah ada
+use App\Models\Artikel; // Pastikan model Article sudah ada
 use App\Http\Middleware\AdminMiddleware;
 
 class ArtikelController extends Controller
@@ -14,15 +14,15 @@ class ArtikelController extends Controller
     public function daftarArtikel()
     {
         // Mengambil semua artikel dari database
-        $artikels = Article::all(); 
-        return view('portal.daftar-artikel', compact('artikels'));
+        $artikels = Artikel::all(); 
+        return view('portal.daftar-artikel',  ['artikels'=>$artikels,'title'=>'ARTIKEL']);
     }
 
     // Menampilkan detail artikel berdasarkan ID
     public function detailArtikel($id)
     {
         // Mencari artikel berdasarkan ID
-        $artikel = Article::findOrFail($id); 
+        $artikel = Artikel::findOrFail($id); 
         return view('portal.detail-artikel', compact('artikel'));
     }
 
@@ -46,7 +46,7 @@ class ArtikelController extends Controller
         $gambarPath = $request->hasFile('gambar') ? $request->file('gambar')->store('artikels', 'public') : 'default.jpg';
 
         // Menyimpan artikel ke dalam database
-        Article::create([
+        Artikel::create([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
             'konten' => $request->konten,
@@ -59,7 +59,7 @@ class ArtikelController extends Controller
     // Menampilkan halaman edit artikel
     public function editArtikel($id)
     {
-        $artikel = Article::findOrFail($id); // Menemukan artikel berdasarkan ID
+        $artikel = Artikel::findOrFail($id); // Menemukan artikel berdasarkan ID
         return view('portal.edit-artikel', compact('artikel'));
     }
 
@@ -75,7 +75,7 @@ class ArtikelController extends Controller
         ]);
 
         // Menemukan artikel berdasarkan ID
-        $artikel = Article::findOrFail($id);
+        $artikel = Artikel::findOrFail($id);
 
         // Update artikel
         $artikel->judul = $request->judul;
@@ -96,7 +96,7 @@ class ArtikelController extends Controller
     // Menghapus artikel
     public function hapusArtikel($id)
     {
-        $artikel = Article::findOrFail($id); // Menemukan artikel berdasarkan ID
+        $artikel = Artikel::findOrFail($id); // Menemukan artikel berdasarkan ID
         $artikel->delete(); // Menghapus artikel
 
         return redirect()->route('artikel.daftar')->with('success', 'Artikel berhasil dihapus!');

@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Article;
+use App\Models\Artikel;
 
-class Article extends Model
+class Artikel extends Model
 {
     use HasFactory;
 
