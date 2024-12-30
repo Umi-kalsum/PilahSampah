@@ -14,7 +14,7 @@ class ArtikelController extends Controller
     public function daftarArtikel()
     {
         // Mengambil semua artikel dari database
-        $artikels = Article::all(); 
+        $artikels = Artikels::all(); 
         return view('portal.daftar-artikel', compact('artikels'));
     }
 
