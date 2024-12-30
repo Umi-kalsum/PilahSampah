@@ -14,7 +14,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($articles as $key => $article)
+        @foreach ($artikels as $key => $article)
         <tr>
             <td>{{ $key + 1 }}</td>
             <td>{{ $article->judul }}</td>
