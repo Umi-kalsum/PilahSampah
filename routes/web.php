@@ -48,6 +48,7 @@ Route::get('about_me', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\JenisSampahController;
 
 <<<<<<< HEAD
@@ -59,6 +60,8 @@ use App\Http\Controllers\SampahController;
 Route::get('/jenis-sampah', [SampahController::class, 'index']);
 >>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
 =======
+=======
+>>>>>>> 843ac0d9d7308dee49a60d945601c9e8ffd344da
 use App\Http\Controllers\JenisSampahController;
 
 =======
@@ -70,6 +73,7 @@ Route::get('/', function () {
 })->name('landingpage');
 
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9bbb77e (menambahkan jenis sampah)
 =======
@@ -163,5 +167,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
 // Rute umum untuk semua pengguna
 Route::get('/portal/artikel', [ArtikelController::class, 'daftarArtikel'])->name('artikel.daftar');
 Route::get('/portal/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('artikel.detail');
+=======
+>>>>>>> 843ac0d9d7308dee49a60d945601c9e8ffd344da
 
 require __DIR__.'/auth.php';

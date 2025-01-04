@@ -24,31 +24,46 @@
 
     <!-- Livewire -->
     @livewireStyles
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'Pilah Sampah')</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+>>>>>>> 43e0edfd86fa4504433010959e22590082dcdb27
 </head>
-<body class="font-sans antialiased bg-gray-100">
-    <x-banner />
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Pilah Sampah</a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portal/artikel">Artikel</a></li>
+                @auth
+                    @if(auth()->user()->role === 'admin')
+                        <li><a href="/portal/artikel/tambah">Tambah Artikel</a></li>
+                    @endif
+                    <li><a href="/logout">Logout</a></li>
+                @else
+                    <li><a href="/login">Login</a></li>
+                @endauth
+            </ul>
+        </nav>
+    </header>
 
-    <div class="min-h-screen">
-        @livewire('navigation-menu')
+    <!-- Main Content -->
+    <main>
+        @yield('content')
+    </main>
 
-        <!-- Page Heading -->
-        @if (isset($header))
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                </div>
-            </header>
-        @endif
-
-        <!-- Page Content -->
-        <main>
-            @yield('content')
-        </main>
-    </div>
-
-    @stack('modals')
-
-    @livewireScripts
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pilah Sampah. All rights reserved.</p>
+    </footer>
 </body>
 =======
         <!-- Scripts -->
