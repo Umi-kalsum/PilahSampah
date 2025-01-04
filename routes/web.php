@@ -31,19 +31,6 @@ Route::get('about_me', function () {
     return view('portal.about_me'); 
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use App\Http\Controllers\JenisSampahController;
-
-Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
-<<<<<<< HEAD
-=======
-use App\Http\Controllers\SampahController;
-
-Route::get('/jenis-sampah', [SampahController::class, 'index']);
->>>>>>> 03026fb (manambahkan landingpage,jenis sampah)
-=======
 use App\Http\Controllers\JenisSampahController;
 
 Route::get('/', function () {
@@ -51,37 +38,5 @@ Route::get('/', function () {
 })->name('landingpage');
 
 Route::get('/jenis-sampah', [JenisSampahController::class, 'index'])->name('jenis-sampah');
->>>>>>> 9bbb77e (menambahkan jenis sampah)
-=======
-Route::get('/kategori', [CategoryController::class, 'index'])->name('kategori.index');
-Route::get('/kategori/{kategori_id}', [CategoryController::class, 'show'])->name('kategori.show');
->>>>>>> ca3563d (re Jenis sampah)
-=======
-Route::get('/jenis-sampah', function () {
-    return view('portal.jenis-sampah');
-})->name('jenis-sampah');
-
-Route::get('/jenis-sampah/{id}', function ($id) {
-    return view('portal.detail-jenis-sampah', ['id' => $id]);
-})->name('detail-jenis-sampah');
-
-Route::get('login', function () {
-    return 'Login Page'; // Ganti dengan halaman login Anda
-})->name('login');
-
-Route::get('/portal/artikel', [ArtikelController::class, 'daftarArtikel'])->name('artikel.daftar');
-Route::get('/portal/artikel/{id}', [ArtikelController::class, 'detailArtikel'])->name('artikel.detail');
-Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
-Route::post('login', [AuthController::class, 'login'])->name('login.post');
-Route::get('register', [AuthController::class, 'showRegisterForm'])->name('register');
-Route::post('register', [AuthController::class, 'register'])->name('register.post');
-Route::get('dashboard', function () {
-    return view('portal.dashboard');
-})->name('dashboard')->middleware('auth');
-
-// Logout Route
-Route::post('logout', [AuthController::class, 'logout'])->name('logout');
-
-Route::get('kelola-sampah', [SampahController::class, 'index'])->name('sampah.kelola');
 
 require __DIR__.'/auth.php';
